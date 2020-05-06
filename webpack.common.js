@@ -6,7 +6,7 @@ module.exports = {
     mode: 'development',
     entry: {
         index: './src/index.js',
-        another: './src/another-module.js'
+        // another: './src/another-module.js'
     },
     plugins: [
         new CleanWebpackPlugin(),
@@ -14,12 +14,12 @@ module.exports = {
             title: 'Code split'
         }),
     ],
-    optimization: {
-        splitChunks: {
-            chunks: 'all',
-            name: 'common'
-        }
-    },
+    // optimization: {
+    //     splitChunks: {
+    //         chunks: 'all',
+    //         name: 'common'
+    //     }
+    // },
     output: {
         filename: '[name].bundle.js',
         chunkFilename: '[name].bundle.js',
